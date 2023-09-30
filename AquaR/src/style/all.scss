@@ -1,0 +1,14 @@
+@import "bootstrap/scss/functions";
+// @import "../../node_modules/bootstrap/scss/functions";
+@import "./variables";
+@import "bootstrap/scss/bootstrap";
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// 元件樣式
+// @import "./home";
+@import "./parts";
+@import "./variables";
+@import "./ActivitieSC.css";
+@import "./sea.css";
+@import "./ContactUs.css";
+@import "./News.css";

@@ -1,0 +1,209 @@
+/* CSS樣式變數設定 */
+:root {
+  --transition-ease: ease-in-out;
+  --transition-duration: 700ms;
+  --max-title-size: 48px;
+  --first-subtitle-size: 32px;
+  --second-subtitle-size: 24px;
+  --third-decoration-size: 20px;
+  --content-size: 16px;
+  --font-weight: 900;
+  --color: white;
+  --primary: #182434;
+  --success: #9ddcff;
+}
+
+/* 字型 - start */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+/* 字型 - end */
+
+/* 卡片內容內間距 - start */
+.card-container {
+  padding-top: 100px;
+}
+/* 卡片內容內間距 - end */
+
+/* 卡片點擊狀態 - start */
+/* 點擊卡片後，卡片在上方水平居中 */
+.centered-card {
+  position: absolute;
+  top: 10%;
+  left: 33%;
+  z-index: 999;
+}
+
+/* 點擊卡片後，卡片在上方水平居中 */
+.cardClass {
+  position: absolute;
+  top: 10%;
+  right: 33%;
+  z-index: 999;
+}
+/* 卡片點擊狀態 - end */
+
+/* 最新消息標題定位 - start */
+#new {
+  margin-bottom: 80px;
+  color: var(--color);
+  margin-top: 65px;
+  text-align: center;
+  font-size: var(--max-title-size);
+  font-weight: 700;
+  text-shadow: 0em 0em 0.2em rgba(255, 255, 255, 0.5);
+}
+/* 最新消息標題定位 - end */
+
+/* 最新消息卡片樣式 - start */
+.movie-card {
+  color: white;
+  position: relative;
+  top: 5px;
+  bottom: 40px;
+  border-radius: 0.6em;
+  overflow: hidden;
+  font-size: 125%;
+  height: 35vh;
+  max-width: 26vw;
+  aspect-ratio: 16/9;
+  margin: auto;
+  transition: background-color var(--transition-duration);
+}
+
+.movie-card::after {
+  transform: scale(1.03);
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 80% -150%,
+    transparent 60%,
+    rgba(0, 0, 0, 0.5)
+  );
+  transition: box-shadow 700ms;
+  mix-blend-mode: overlay;
+}
+/* 最新消息卡片樣式 - end */
+
+/* 最新消息Card -> 圖片篇幅 - start */
+.picture {
+  height: 100%;
+  width: 100%;
+  transition: transform var(--transition-duration);
+  object-fit: cover;
+  object-position: center;
+}
+/* 最新消息Card -> 圖片篇幅 - end */
+
+/* 最新消息Card -> 內容區塊 - start */
+.content {
+  background-color: rgba(4, 2, 0, 0.658);
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  transition: transform var(--transition-duration) var(--ease-in-out);
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.content > * {
+  position: relative;
+  will-change: transform;
+  left: 5px;
+}
+
+.date,
+.content h5 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 17px;
+  display: block;
+}
+
+.movie-card .content h5 {
+  font-size: 22px;
+}
+/* 最新消息Card -> 內容區塊 - end */
+
+/* 最新消息Card -> 標題下方內容 - start */
+.synopsis {
+  padding: 13px;
+  font-size: 0.75em;
+  line-height: 1.4;
+  margin-block: 0.75em;
+  transition-delay: calc(var(--transition-duration) / 8);
+  transition-property: opacity, transform;
+  transition-duration: calc(var(--transition-duration) / 2);
+}
+/* 最新消息Card -> 標題下方內容 - end */
+
+/* 最新消息偽元素動畫 - start */
+.movie-card:hover {
+  transform: scale(1.03);
+  background-color: black;
+}
+
+/* 文字在hover狀態下慢慢往上移動到固定高度 */
+.movie-card:hover .content {
+  transition: transform 0.6s ease-in-out;
+}
+
+.movie-card:hover .picture {
+  transform: scale(1.03);
+}
+.movie-card:hover .synopsis {
+  transition-duration: 2000ms;
+  transition-delay: calc(2000ms) / 3;
+}
+
+.movie-card:not(:hover) .synopsis {
+  opacity: 0;
+  transform: translateY(1em);
+}
+
+.movie-card:not(:hover) .content {
+  transform: translateY(calc(100% - 4.5em));
+  transition: transform 0.6s ease-in-out;
+}
+
+.movie-card:not(:hover) {
+  transition: transform 0.6s ease-in-out;
+}
+/* 最新消息卡片動畫 - end */
+
+/* RWD */
+@media screen and (max-width: 540px) {
+  .movie-card {
+    max-width: 80%;
+  }
+
+  /* 你也可以调整字体大小，使其在小屏幕上更适合 */
+  .movie-card .content h5 {
+    font-size: 18px;
+  }
+
+  #new {
+    font-size: 32px;
+  }
+}
+
+/* 使.movie-card居中显示 */
+/* .movie-card {
+  margin: 0 auto;
+  text-align: center;
+} */
+
+/* 使.movie-card居中显示 */
+/* .movie-card {
+  margin: 0 auto;
+  text-align: center;
+} */

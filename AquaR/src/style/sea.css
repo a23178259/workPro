@@ -1,0 +1,180 @@
+/*  */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+
+/* 內容定位 */
+:root {
+  --max-title-size: 48px;
+  --first-subtitle-size: 32px;
+  --second-subtitle-size: 24px;
+  --third-decoration-size: 20px;
+  --content-size: 16px;
+  --font-weight: 900;
+  --color: white;
+  --primary: #182434;
+  --success: #9ddcff;
+}
+
+/* 標題 */
+#sea {
+  color: var(--color);
+  margin-top: 130px;
+  text-align: center;
+  font-size: var(--max-title-size);
+  font-weight: 700;
+  text-shadow: 0em 0em 0.2em rgba(255, 255, 255, 0.5);
+  margin-bottom: 100px;
+}
+
+.small-screen-title {
+  display: none;
+}
+
+.seatextone {
+  color: #d63e54;
+}
+
+.seatextwo {
+  color: #cead38;
+}
+
+.seatext p:last-child {
+  /* font-size: var(--content-size); */
+  color: #3ea0d6;
+}
+
+/* 內文上方的標題 */
+.seatext p:first-child {
+  font-size: var(--second-subtitle-size);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+/* 整體卡片容器 */
+
+.wrap {
+  font-family: "Noto Sans TC", sans-serif;
+  min-height: 124vh;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  /* justify-content: space-between; */
+  justify-content: center;
+  width: 90vmin;
+  height: 30em;
+  margin: 2rem auto;
+  /* border: 8px solid; */
+  margin-bottom: 100px;
+  border-image: linear-gradient(15deg, #13547a 50%, #80d0c7 100%) 1;
+  position: relative;
+  right: 100px;
+  overflow: hidden;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15vmin;
+  height: 100%;
+  padding: 0.5rem 0 0 0.5rem;
+  border: 3px solid;
+}
+
+.inset {
+  /* padding-left: 10%; */
+  max-width: 60%;
+  /* width: 60vmin; */
+  margin: 0.25em 1em 1em 0;
+  border-radius: 0.25em;
+  float: left;
+}
+
+.seatext {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70vmin;
+  height: 100%;
+  padding: 3vmin 4vmin;
+  background: #fff;
+  overflow-y: auto;
+  font-size: 18px;
+}
+
+.wrap .overlay {
+  transform: translateX(-60vmin);
+}
+.wrap .image-content {
+  width: 40vmin;
+}
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translate(4em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(3em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    width: 90vmin;
+    position: relative;
+    left: -20px;
+    min-height: 140vh;
+  }
+  .seatext {
+    width: 80vmin;
+  }
+
+  #sea {
+    font-size: 32px;
+    margin-bottom: 45px;
+  }
+
+  .large-screen-title {
+    display: none;
+  }
+
+  .small-screen-title {
+    text-align: center;
+    display: block;
+  }
+}
