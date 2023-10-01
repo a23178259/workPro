@@ -12,15 +12,17 @@
 <br/>
 目的是將海生館的各種魅力呈現給網站訪問者，希望盡可能地呈現出有用戶體驗的視覺化網站。
 <br/>
+<br/>
 AquaR整個專案使用技術：Figma、Photoshop、HTML、CSS、Sass、JavaScript、jQuery、Bootstrap、React、Sass、Node.js、MySQL
 <br/>
 我負責的頁面使用的技術：React、HTML、CSS、JavaScript、jQuery、Bootstrap、Node.js、MySQL
+<br/>
 <br/>
 專案製作期間我負責製作三個頁面，最新消息、館內活動、聯絡我們
 <br/>
 每個頁面平均耗時1週，第4週為調適各個網頁的Bug與其他內容、特效的部分。
 <br/>
-
+<br/>
 最新消息頁面：以卡片的形式呈現最新消息，並加入了hover效果和其他動畫效果，使頁面更生動。使用者進入最新消息頁面可以點擊查看海生館內所發布的最新訊息。
 <br/>
 
