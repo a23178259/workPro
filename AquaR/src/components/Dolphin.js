@@ -2,7 +2,7 @@ import React from "react";
 import "../style/sea.css";
 const Dolphin = () => {
   return (
-    <div>
+    <div className="bgimg">
       <h1 id="sea" className="large-screen-title">
         重要通知：海豚秀時間更新
       </h1>

@@ -20,6 +20,12 @@
 }
 /* 字型 - end */
 
+.bgimg {
+  background-image: url("https://i.imgur.com/pN8uphI.jpg");
+  background-repeat: no-repeat;
+  max-width: 100vw !important;
+}
+
 /* 卡片內容內間距 - start */
 .card-container {
   padding-top: 100px;
@@ -195,15 +201,3 @@
     font-size: 32px;
   }
 }
-
-/* 使.movie-card居中显示 */
-/* .movie-card {
-  margin: 0 auto;
-  text-align: center;
-} */
-
-/* 使.movie-card居中显示 */
-/* .movie-card {
-  margin: 0 auto;
-  text-align: center;
-} */

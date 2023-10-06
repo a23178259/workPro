@@ -14,10 +14,15 @@
   --success: #9ddcff;
 }
 
+.bgimg {
+  background-image: url("https://i.imgur.com/pN8uphI.jpg");
+  background-repeat: no-repeat;
+}
+
 /* 標題 */
 #sea {
   color: var(--color);
-  margin-top: 130px;
+  padding-top: 130px;
   text-align: center;
   font-size: var(--max-title-size);
   font-weight: 700;

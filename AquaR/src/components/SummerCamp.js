@@ -3,7 +3,7 @@ import "../style/sea.css";
 
 const SummerCamp = () => {
   return (
-    <div>
+    <div className="bgimg">
       <h1 id="sea">兒童冬令營現正報名中</h1>
       <div className="wrap animate pop">
         <div className="overlay">

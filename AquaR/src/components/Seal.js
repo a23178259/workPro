@@ -3,7 +3,7 @@ import "../style/sea.css";
 
 const Seal = () => {
   return (
-    <div>
+    <div className="bgimg">
       <h1 id="sea">海豹幼崽的誕生</h1>
       <div className="wrap animate pop" id="wrap">
         <div className="overlay">

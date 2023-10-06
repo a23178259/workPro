@@ -12,21 +12,7 @@
 
 /* 字型 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
-/* body {
-  background-image: url("https://i.imgur.com/pN8uphI.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #fff;
-  font-family: "Noto Sans TC", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-rendering: optimizeLegibility;
-  font-weight: initial;
-  font-size: 17px;
-} */
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -36,7 +22,7 @@
 #head {
   margin-bottom: 40px;
   color: var(--color);
-  margin-top: 123px;
+  padding-top: 123px;
   text-align: center;
   font-size: var(--max-title-size);
   font-weight: 700;
@@ -385,6 +371,9 @@ a:hover {
   }
   #head {
     font-size: var(--first-subtitle-size);
+  }
+  .postcard .postcard__bar {
+    width: 100%;
   }
 }
 

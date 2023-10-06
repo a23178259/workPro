@@ -80,7 +80,7 @@ function MainContactUSCOPY() {
   };
 
   return (
-    <div>
+    <div className="bgimg">
       <p className="contactus">聯絡我們</p>
       <div className="glass-container" id="glass">
         <div className="container">

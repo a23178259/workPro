@@ -3,7 +3,7 @@ import "../style/sea.css";
 
 const Sea = () => {
   return (
-    <div>
+    <div className="bgimg">
       <h1 id="sea">海洋生態講座</h1>
       <div className="wrap animate pop">
         <div className="overlay">

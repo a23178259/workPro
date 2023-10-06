@@ -2,14 +2,18 @@ import React from "react";
 import "../style/sea.css";
 const Star = () => {
   return (
-    <div>
+    <div className="bgimg">
       <h1 id="sea">夜間觀賞</h1>
       <div className="wrap animate pop">
         <div className="overlay">
           <div className="image-content animate slide delay-5"></div>
         </div>
         <div className="seatext">
-          <p> 星海奇遇：星空下的海洋奇觀</p>
+          <p>
+            星海奇遇：星空下的
+            <br />
+            海洋奇觀
+          </p>
           <img
             className="inset"
             src="https://i.postimg.cc/ZRzHNysq/image.gif"
@@ -21,7 +25,6 @@ const Star = () => {
             我們將舉辦一場特別的夜間觀賞活動。
             在星空下與家人和朋友一起，來體驗壯觀的海洋生物世界。
           </p>
-          <br />
           <br />
           <p>
             <box-icon name="group" type="solid" color="#d63e54"></box-icon>
@@ -67,7 +70,6 @@ const Star = () => {
               <li>費用：預購票為350元，票券限量500張</li>
             </ul>
           </div>
-          <br />
           <p>
             <box-icon
               name="message-rounded"

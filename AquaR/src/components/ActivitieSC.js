@@ -1,5 +1,4 @@
 import React from "react";
-// import AOS from "aos";
 
 function PodcastCard({ id, theme, imgSrc, title, preview, tags = [] }) {
   const paragraphs =

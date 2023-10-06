@@ -4,7 +4,7 @@ import "../style/coral.css";
 
 const Coral = () => {
   return (
-    <div>
+    <div className="bgimg">
       <h1 id="sea">探索珊瑚世界</h1>
       <div className="wrap animate pop">
         <div className="overlay">
@@ -24,7 +24,6 @@ const Coral = () => {
             【發現珊瑚之美：水中鑽石】展覽即將來臨，探索珊瑚世界是一個獨一無二的展覽，
             將帶您深入探索，大海中這些多樣化的珊瑚。
           </p>
-          <br />
           <br />
           <p>
             <box-icon name="group" type="solid" color="#d63e54"></box-icon>

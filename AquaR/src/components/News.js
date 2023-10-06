@@ -19,7 +19,7 @@ const News = () => {
   };
   // JSX
   return (
-    <div className="card-container container">
+    <div className="card-container container bgimg">
       {/* 標題header - start */}
       <h1 id="new">最新消息</h1>
       {/* 標題header - end */}
