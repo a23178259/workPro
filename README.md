@@ -3,21 +3,21 @@ AquaR：資策會大專
 pratice：練習各種樣式組件
 
 <hr/>
-<p>▼ 專案介紹<p/>
-專案名稱：AquaR
+<p>▼ 專題介紹<p/>
+專題名稱：AquaR
 <br/>
-專案類型：海生館
+專題網站類型：海生館
 <br/>
-專案分類：觀光景點
+專案網站分類：觀光景點
 <br/>
-專案動機：動機是因為台中即將有一個海生館要開幕了，所以跟組員一起製作了以海生館為主題的視覺化網站，我們的網站主要分類為觀光景點。
+製作動機：動機是因為台中即將有一個海生館要開幕了，所以跟組員一起製作了以海生館為主題的視覺化網站，我們的網站主要分類為觀光景點。
 <br/>
-專案介紹：我跟組員一起參考了各種網站，其中以新竹市立動物園、台北木柵動物園、日本星野集團、桃園Xpark為主軸做參考與資料的查找。
+專題介紹：我跟組員一起參考了各種網站，其中以新竹市立動物園、台北木柵動物園、日本星野集團、桃園Xpark為主軸做參考與資料的查找。
 <br/>
 目的是將海生館的各種魅力呈現給網站訪問者，希望盡可能地呈現出有用戶體驗感的視覺化網站。
 <br/>
 
-AquaR整個專案使用技術：Figma、Photoshop、HTML、CSS、Sass、JavaScript、jQuery、Bootstrap、React、Sass、Node.js、MySQL
+AquaR專題使用技術：Figma、Photoshop、HTML、CSS、Sass、JavaScript、jQuery、Bootstrap、React、Sass、Node.js、MySQL
 <br/>
 我負責的頁面使用的技術：React、HTML、CSS、JavaScript、jQuery、Bootstrap、Node.js、MySQL
 <br/>
